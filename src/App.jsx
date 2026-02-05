@@ -15,7 +15,7 @@ const App = () => {
           <Sidebar />
           <SidebarContent />
         </div>
-        <div className="flex-grow overflow-y-auto">
+        <div className="flex-grow">
           <Body />
         </div>
       </main>

@@ -14,7 +14,7 @@ const SidebarContent = () => {
           <div className='flex items-center justify-between px-2 py-1 cursor-pointer' onClick={()=>setVisible(!visible)}>
             <div className='flex items-center font-bold'>
               <i className={visible == false ? 'pi pi-angle-right text-[14px]' : 'pi pi-angle-down text-[14px]'}/>
-              <p>PORTFOLIO</p>
+              <p>PROJECTS</p>
             </div>
             <div className={visible == false ? 'hidden' : 'block'}>
               <div className='flex items-center gap-0'>

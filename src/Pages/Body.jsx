@@ -1,4 +1,5 @@
 import React from 'react'
+import Welcome from './Welcome'
 
 const Body = () => {
 
@@ -8,9 +9,9 @@ const Body = () => {
     <div className='bg-[#2C3037] h-full text-[#AAB1BE] w-full text-[12px] p-4'>
       {
         showWelcome ?
-          <>
-            <p>Welcome to my portfolio!</p>
-          </>
+          <div className='flex items-center justify-center h-full w-full'>
+            <Welcome />
+          </div>
           :
           <>
             <p>body</p>

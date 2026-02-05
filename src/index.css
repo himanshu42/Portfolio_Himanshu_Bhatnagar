@@ -11,3 +11,13 @@ html, body, #root {
 body{
   /* background-color: #282c34; */
 }
+
+.scallop-shape {
+  transform-origin: 50% 50%;
+  animation: rotateMask 10s linear infinite;
+}
+
+@keyframes rotateMask {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
