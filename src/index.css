@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* This ensures the 'vessel' of your app is exactly the size of the screen */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* This prevents the tiny sub-pixel scroll gap */
+}
+
+body{
+  /* background-color: #282c34; */
+}
