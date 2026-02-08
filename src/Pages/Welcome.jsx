@@ -21,7 +21,7 @@ import { FaHtml5 } from "react-icons/fa";
 
 const Welcome = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center px-6">
+    <section className="w-full min-h-screen flex items-center justify-center px-6 bg-[#2C3037] text-[#AAB1BE]">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT SIDE */}
@@ -30,7 +30,7 @@ const Welcome = () => {
           {/* Avatar */}
           <svg width="320" height="320" viewBox="0 0 200 200">
             <defs>
-              <clipPath id="scallopClip">
+              <clipPath id="scallopClip1">
                 <path
                   d="
                     M100,10
@@ -66,7 +66,7 @@ const Welcome = () => {
               width="200"
               height="200"
               preserveAspectRatio="xMidYMid slice"
-              clipPath="url(#scallopClip)"
+              clipPath="url(#scallopClip1)"
             />
           </svg>
 
