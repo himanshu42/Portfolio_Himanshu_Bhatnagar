@@ -8,12 +8,31 @@ import SidebarContent from './Components/SidebarContent/SidebarContent';
 import WelcomeMobile from './Pages/WelcomeMobile';
 
 const App = () => {
+
+  const [showSidebar, setShowSidebar] = React.useState(false);
+
   return (
     <div className="min-h-screen">
 
       {/* MOBILE / TABLET */}
-      <div className="block lg:hidden">
-        <WelcomeMobile />
+      <div className="block lg:hidden relative h-screen overflow-y-auto">
+
+        {!showSidebar && (
+          <>
+            <WelcomeMobile />
+            <i
+              className="pi pi-bars text-[24px] absolute top-4 left-4 cursor-pointer text-[#AAB1BE]"
+              onClick={() => setShowSidebar(true)}
+            />
+          </>
+        )}
+
+        {showSidebar && (
+          <div className="flex min-h-screen w-full">
+            <SidebarContent className="flex-1" setShowSidebar={setShowSidebar} />
+          </div>
+        )}
+
       </div>
 
       {/* DESKTOP */}
@@ -22,7 +41,6 @@ const App = () => {
         <Header />
 
         <main className="flex flex-grow">
-
           <div className="flex">
             <Sidebar />
             <SidebarContent />
@@ -31,7 +49,6 @@ const App = () => {
           <div className="flex-grow">
             <Body />
           </div>
-
         </main>
 
         <Footer />

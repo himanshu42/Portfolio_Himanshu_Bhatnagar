@@ -21,14 +21,14 @@ import { FaHtml5 } from "react-icons/fa";
 
 const WelcomeMobile = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center px-6 bg-[#2C3037] text-[#AAB1BE]">
+    <section className="w-full min-h-screen flex items-center justify-center px-6 bg-[#2C3037] text-[#AAB1BE] pb-5">
           <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     
             {/* LEFT SIDE */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
     
               {/* Avatar */}
-              <svg width="220" height="220" viewBox="0 0 200 200">
+              <svg width="320" height="320" viewBox="0 0 200 200">
                 <defs>
                   <clipPath id="scallopClip">
                     <path
